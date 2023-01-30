@@ -1,11 +1,53 @@
-h1 {
-    color:red;
+:root{
+--colorQuote:rgba(232, 231, 243, 0.74);
+}
+body{
+    transition: background 1s;
+}
+*{
+    box-sizing: border-box;
+}
+h2 {
     text-align: center;
 }
+p{
+    font-size: larger;
+}
 
-
-#quote{
-    background-color: aqua;
-    margin: auto;
+#quote-box{
+   
+    margin:auto;
     text-align: center;
+}
+#text{
+    margin-top:20px;
+   
+}
+#author{
+   
+    text-align: end;
+}
+a{
+    text-decoration: none;
+   
+}
+#quote-box{
+    margin: auto;
+    width: 70%;
+}
+#todo{
+    margin:100px auto;
+    background-color: var(--colorQuote) ;
+    max-width: 700px;
+    min-height: 200px;
+
+}
+#new-quote:hover{
+background-color: var(--colorQuote);
+color: black;
+}
+.con{
+    display: flex;
+    gap:10px;
+    justify-content: center;
 }
