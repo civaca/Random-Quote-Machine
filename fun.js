@@ -15,15 +15,6 @@ class QUOTES extends React.Component{
     this.handleClick=this.handleClick.bind(this)
   }
   
-  componentDidMount(){
-    fetch("https://api.quotable.io/random")
-    .then(response=>response.json())
-    .then(data=>this.setState({
-      author:data.author,
-      text:data.content
-    }))
-    changeColor();
-  }
   handleClick(){
     fetch("https://api.quotable.io/random")
     .then(response=>response.json())
@@ -33,6 +24,9 @@ class QUOTES extends React.Component{
     }))
     changeColor();
   }
+  componentDidMount(){
+    this.handleClick();
+   }
   render(){
     return (
       <div>
