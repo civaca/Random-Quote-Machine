@@ -49,4 +49,4 @@ class QUOTES extends React.Component{
 
 const root=ReactDOM.createRoot(document.getElementById("quote-box"));
 root.render(<QUOTES/>)
-document.getElementById("background").style.background = red;
+
