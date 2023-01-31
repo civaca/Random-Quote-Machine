@@ -24,7 +24,7 @@ let handleClick=()=>{
 return (
   <div>
     <p id="text">{qt.text}</p>
-    <p id="author">{qt.author}</p>
+    <p id="author">-{qt.author}</p>
     
     <span class="con" >
       <a  href="twitter.com/intent/tweet" target="_blank" id="tweet-quote">
